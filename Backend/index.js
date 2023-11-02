@@ -12,14 +12,6 @@ app.use(express.json());
 
 app.use(cors());
 
-// app.use(
-//     cors({
-//     origin:'http://localhost:5555/',
-//     methods:['GET','POST','PUT','DELETE'],
-//     alloweHeaders:['Content-Type'],
-// })
-// );
-
 app.use("/books", booksRoutes);
 
 const port=5555;
